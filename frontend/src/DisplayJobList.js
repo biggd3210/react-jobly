@@ -21,11 +21,11 @@ function DisplayJobList({ branch }) {
             
         }
         getAllJobs();
-        console.log("jobs is ", jobs);
+        
     }, [])
 
     function makeJobDisplayCards(jobs) {
-        return jobs?.map( (job) => {
+        return jobs?.map( (job) => (
             <div key={job.id} className="col-md-12">
                 <Card className="list-card">
                     <CardTitle>{job.title}</CardTitle>
@@ -37,7 +37,7 @@ function DisplayJobList({ branch }) {
                     </CardBody>
                 </Card>
             </div>
-        })
+        ))
     }
 
     return (

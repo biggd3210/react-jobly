@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken';
 //componenets and helpers imports
 import UserContext from "./auth/UserContext";
 import Routes from './Routes';
-import NavBar from './NavBar';
+import Navigation from './routes-nav/Navigation';
 import JoblyApi from './api';
 import useLocalStorage from "./hooks/useLocalStorage";
 import LoadingSpinner from "./common/LoadingSpinner";
@@ -93,8 +93,8 @@ function App() {
         <UserContext.Provider
           value={{ currentUser, setCurrentUser, hasAppliedToJob, applyToJob }}>
           <div className="App">
-            <NavBar />
-            <Routes />
+            <Navigation logout={logout} />
+            <Routes login={login} signup={signup} />
           </div>
         </UserContext.Provider>
       </BrowserRouter>

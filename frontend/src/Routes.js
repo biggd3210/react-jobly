@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { Routes as Switch, Route } from 'react-router-dom';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import DisplayCompanyList from './DisplayCompanyList';
 import DisplayJobList from './DisplayJobList';
