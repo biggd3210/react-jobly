@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 
 //componenets and helpers imports
 import UserContext from "./auth/UserContext";
-import Routes from './Routes';
+import Routes from './routes-nav/Routes';
 import Navigation from './routes-nav/Navigation';
 import JoblyApi from './api';
 import useLocalStorage from "./hooks/useLocalStorage";
