@@ -13,7 +13,6 @@ import LoadingSpinner from "./common/LoadingSpinner";
 import CDNContainer from './common/CDNContainer';
 
 //css imports
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-//import "./CompanyCard.css";
+import "./CompanyCard.css";
 
 /** Show limited information about a company
  * 

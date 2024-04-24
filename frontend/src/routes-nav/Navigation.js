@@ -52,7 +52,7 @@ function Navigation({ logout }) {
         );
     }
     return (
-        <Navbar expand="md">
+        <Navbar className="Navigation" expand="md">
             <Link exact='true' to="/" className="navbar-brand">Jobly</Link>
             <Nav className="ml-auto" navbar>
                 {currentUser ? loggedInNav() : loggedOutNav()}

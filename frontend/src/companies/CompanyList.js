@@ -8,7 +8,7 @@ import {
 import { Link } from 'react-router-dom';
 import JoblyApi from "../api";
 
-import './DisplayList.css';
+//import './DisplayList.css';
 import SearchForm from "../common/SearchForm";
 import CompanyCard from "./CompanyCard";
 import LoadingSpinner from "../common/LoadingSpinner";

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-//import "./JobCard.css";
+import "./JobCard.css";
 import UserContext from "../auth/UserContext";
 
 

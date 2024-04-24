@@ -70,7 +70,11 @@ function ProfileForm() {
                     <form>
                         <div className="form-group">
                             <label>Username</label>
-                            <p className="form-control-plaintext">{formData.username}</p>
+                            <input 
+                                className="form-control" 
+                                readOnly
+                                value={formData.username}
+                            />
                         </div>
                         <div className="form-group">
                             <label>First Name</label>

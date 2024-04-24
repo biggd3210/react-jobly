@@ -1,0 +1,10 @@
+.Homepage {
+    color: white;
+    /* background-color: rgba(255, 255, 255, 0.267); */
+    background-color: rgba(13, 32, 141, 0.562);
+    margin: 5rem auto;
+    width: 500px;
+    height: 500px;
+    padding-top: 150px;
+    border-radius: 20px;
+}
