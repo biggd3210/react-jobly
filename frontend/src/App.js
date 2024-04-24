@@ -10,6 +10,7 @@ import Navigation from './routes-nav/Navigation';
 import JoblyApi from './api';
 import useLocalStorage from "./hooks/useLocalStorage";
 import LoadingSpinner from "./common/LoadingSpinner";
+import CDNContainer from './common/CDNContainer';
 
 //css imports
 import './App.css';
@@ -98,6 +99,7 @@ function App() {
           </div>
         </UserContext.Provider>
       </BrowserRouter>
+      {/* <CDNContainer /> */}
     </div>
   );
 }

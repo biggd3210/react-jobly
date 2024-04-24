@@ -4,20 +4,46 @@ import { Switch, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
 import CompanyList from '../companies/CompanyList';
 import JobList from '../jobs/JobList';
+import LoginForm from '../auth/LoginForm';
+import CompanyDetail from '../companies/CompanyDetail';
+import ProfileForm from '../profiles/ProfileForm';
+import Homepage from '../homepage/Homepage';
 
 
-function Routes() {
+function Routes({ login, signup }) {
     return (
         <section>
             <Switch>
-                <Route exact path="/companies" element={<CompanyList/>} />
-                <PrivateRoute path="/companies/:id" element={<div>This is for one company</div>} />
-                <PrivateRoute exact path="/jobs"element={<JobList />}/>
-                <Route exact path="/login" element={<div>this is for login</div>}/>    
-                <Route exact path="signup" element={<div>this is for signup</div>}/>                    
-                <PrivateRoute exact path="/profile" element={<div>this is for profile</div>}/> 
-                <Route exact path='/' element={<div>Welcome Home. Find your next endeavor here.</div>} />                   
-                <Route path='*' element={<div>Can't seem to find that. Sorry.</div>}/>                    
+                <Route exact path='/'>
+                    <Homepage />
+                </Route>
+                
+                <Route exact path="/login">
+                    <LoginForm login={login}/>
+                </Route>
+
+                <Route exact path="/signup">
+                    {/* <SignUpForm signup={signup} /> */}
+                </Route>
+
+                <Route exact path="/companies">
+                    <CompanyList />
+                </Route>
+
+                <PrivateRoute path="/companies/:handle">
+                    <CompanyDetail />
+                </PrivateRoute>
+
+                <PrivateRoute exact path="/jobs">
+                    <JobList />
+                </PrivateRoute>
+                                       
+                <PrivateRoute exact path="/profile">
+                    <ProfileForm />
+                </PrivateRoute>                  
+                <Route path='*'>
+                    <div>Can't seem to find that. Sorry.</div>
+                </Route>            
             </Switch>
         </section>
     )

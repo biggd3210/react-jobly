@@ -53,7 +53,7 @@ function Navigation({ logout }) {
     }
     return (
         <Navbar expand="md">
-            <NavLink exact to="/" className="navbar-brand">Jobly</NavLink>
+            <Link exact='true' to="/" className="navbar-brand">Jobly</Link>
             <Nav className="ml-auto" navbar>
                 {currentUser ? loggedInNav() : loggedOutNav()}
             </Nav>

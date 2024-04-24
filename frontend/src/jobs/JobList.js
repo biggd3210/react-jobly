@@ -19,7 +19,7 @@ function JobList() {
     const [jobs, setJobs] = useState(null);
 
     useEffect(function getAllJobsOnMount() {
-        Search();
+        search();
     }, []);
 
     /** Triggered by search form submit; reloads jobs. */
