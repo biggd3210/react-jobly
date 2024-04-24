@@ -8,6 +8,7 @@ import LoginForm from '../auth/LoginForm';
 import CompanyDetail from '../companies/CompanyDetail';
 import ProfileForm from '../profiles/ProfileForm';
 import Homepage from '../homepage/Homepage';
+import SignupForm from '../auth/SignupForm';
 
 
 function Routes({ login, signup }) {
@@ -23,7 +24,7 @@ function Routes({ login, signup }) {
                 </Route>
 
                 <Route exact path="/signup">
-                    {/* <SignUpForm signup={signup} /> */}
+                    <SignupForm signup={signup} />
                 </Route>
 
                 <Route exact path="/companies">

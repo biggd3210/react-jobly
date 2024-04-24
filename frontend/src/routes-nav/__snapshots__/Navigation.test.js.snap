@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="Navigation navbar navbar-expand-md"
+  >
+    <div
+      class="container-fluid"
+    >
+      <a
+        class="navbar-brand"
+        exact="true"
+        href="/"
+      >
+        Jobly
+      </a>
+      <ul
+        class="ml-auto navbar-nav"
+      >
+        <ul
+          class="navbar-nav ml-auto"
+        >
+          <li
+            class="nav-item mr-4"
+          >
+            <a
+              class="nav-link"
+              href="/companies"
+            >
+              Companies
+            </a>
+          </li>
+          <li
+            class="nav-item mr-4"
+          >
+            <a
+              class="nav-link"
+              href="/jobs"
+            >
+              Jobs
+            </a>
+          </li>
+          <li
+            class="nav-item mr-4"
+          >
+            <a
+              class="nav-link"
+              href="/profile"
+            >
+              Profile
+            </a>
+          </li>
+          <li
+            class="nav-item mr-4"
+          >
+            <a
+              class="nav-link"
+              href="/"
+            >
+              Log Out testfirst
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when logged out 1`] = `
+<DocumentFragment>
+  <nav
+    class="Navigation navbar navbar-expand-md"
+  >
+    <div
+      class="container-fluid"
+    >
+      <a
+        class="navbar-brand"
+        exact="true"
+        href="/"
+      >
+        Jobly
+      </a>
+      <ul
+        class="ml-auto navbar-nav"
+      >
+        <ul
+          class="navbar-nav ml-auto"
+        >
+          <li
+            class="nav-item mr-4"
+          >
+            <a
+              class="nav-link"
+              href="/login"
+            >
+              Login
+            </a>
+          </li>
+          <li
+            class="nav-item mr-4"
+          >
+            <a
+              class="nav-link"
+              href="/signup"
+            >
+              Sign Up
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

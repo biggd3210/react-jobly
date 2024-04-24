@@ -12,6 +12,13 @@ body {
   
 }
 
+.SignupForm h2 {
+  color: white;
+}
+
+.LoginForm h3 {
+  color: white;
+}
 h4 {
   color: antiqueWhite;
 }
